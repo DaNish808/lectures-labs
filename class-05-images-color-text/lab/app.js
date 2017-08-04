@@ -191,7 +191,22 @@ new branch for your work on the next question!
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
 
+    var product = 1git;
+    var numString = '';
+
+    for(var i = 0; i < testArray.length; i++) {
+        product = multiply(product, testArray[i])[0];
+        numString = numString + testArray[i];
+        if(i < testArray.length - 1){
+            numString = numString + ",";
+        } 
+    }
+
+    return [
+        product,
+        'The numbers ' + numString + " have a product of " + product + "."
+    ];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+ testMultiplyArray(2,3,4);
